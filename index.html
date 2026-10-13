@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Validar Diplomado - NAYELI GUADALUPE ANDRADE GONZALEZ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#f2f2f2;
+}
+
+.overlay{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+}
+
+.modal{
+  background:#ffffff;
+  border-radius:6px;
+  max-width:1200px;
+  width:100%;
+  box-shadow:0 4px 14px rgba(0,0,0,.25);
+  overflow:hidden;
+}
+
+.modal-header{
+  background:#f5efe4;
+  border-bottom:4px solid #7b1534;
+  padding:14px 24px;
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+.modal-header img{
+  width:auto;
+  height:58px;
+  max-width:300px;
+  object-fit:contain;
+}
+
+.modal-header h1{
+  color:#7b1534;
+  font-size:24px;
+  font-weight:700;
+  letter-spacing:1px;
+}
+
+.modal-body{
+  padding:24px;
+  display:flex;
+  gap:25px;
+  align-items:flex-start;
+}
+
+.info-column{
+  flex:1;
+  min-width:0;
+}
+
+.images-column{
+  flex:1;
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+}
+
+.info-row{
+  display:flex;
+  border:1px solid #dedede;
+  border-bottom:none;
+}
+
+.info-row:last-child{
+  border-bottom:1px solid #dedede;
+}
+
+.label{
+  background:#f8f5ef;
+  color:#4a4a4a;
+  font-weight:700;
+  padding:10px 12px;
+  width:35%;
+  border-right:1px solid #dedede;
+}
+
+.value{
+  padding:10px 12px;
+  width:65%;
+  color:#333333;
+  line-height:1.4;
+  word-wrap:break-word;
+}
+
+.cert-img{
+  width:100%;
+  max-width:600px;
+  height:auto;
+  display:block;
+  border:1px solid #ddd;
+  box-shadow:0 2px 8px rgba(0,0,0,.12);
+}
+
+@media(max-width:900px){
+
+  .modal-header{
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+  }
+
+  .modal-header img{
+    height:auto;
+    width:100%;
+    max-width:290px;
+  }
+
+  .modal-header h1{
+    font-size:21px;
+  }
+
+  .modal-body{
+    flex-direction:column;
+  }
+
+  .info-column,
+  .images-column{
+    width:100%;
+  }
+}
+
+@media(max-width:550px){
+
+  .overlay{
+    padding:10px;
+  }
+
+  .modal-body{
+    padding:15px;
+  }
+
+  .info-row{
+    flex-direction:column;
+  }
+
+  .label,
+  .value{
+    width:100%;
+  }
+
+  .label{
+    border-right:none;
+    border-bottom:1px solid #dedede;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+  <div class="modal">
+
+    <div class="modal-header">
+      <img src="Logo DGSUM.png" alt="DGESuM - Dirección General de Educación Superior para el Magisterio">
+      <h1>VALIDAR DIPLOMA</h1>
+    </div>
+
+    <div class="modal-body">
+
+      <div class="info-column">
+
+        <div class="info-row">
+          <div class="label">Nombre:</div>
+          <div class="value">NAYELI GUADALUPE ANDRADE GONZALEZ</div>
+        </div>
+
+        <div class="info-row">
+          <div class="label">CURP:</div>
+          <div class="value">AAGN880508MVZNNY08</div>
+        </div>
+
+        <div class="info-row">
+          <div class="label">Diplomado:</div>
+          <div class="value">La Nueva Escuela Mexicana: Un proyecto emancipatorio</div>
+        </div>
+
+        <div class="info-row">
+          <div class="label">Inicio:</div>
+          <div class="value">01/06/2026</div>
+        </div>
+
+        <div class="info-row">
+          <div class="label">Término:</div>
+          <div class="value">12/10/2026</div>
+        </div>
+
+        <div class="info-row">
+          <div class="label">Carga Horaria:</div>
+          <div class="value">200 Horas</div>
+        </div>
+
+        <div class="info-row">
+          <div class="label">Folio:</div>
+          <div class="value">9184/30583/2026</div>
+        </div>
+
+      </div>
+
+      <div class="images-column">
+        <img class="cert-img" src="constancia.jpg" alt="Constancia de NAYELI GUADALUPE ANDRADE GONZALEZ">
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
